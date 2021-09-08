@@ -8,23 +8,23 @@
 I coded this quite long ago just to get started on an auto trader. So it's pretty under developed and only uses one stragety which is the 3 SMA. Basically making trades when the Short and Long SMA crossover each other while using the Base SMA to see the trend. It's a pretty basic strategy and is used quite a bit for binary options. Since i have developed another auto trader which works more efficency and has more stragies wtih a proper GUI, i decided to release this first "prototype" i made for fun. 
 
 # Settings.cpp
-- `root_path`: The root folder used for prices and the saved json file
-- `best_input`: The file that all the best inputs will be saved under
-- `prices`: the folder with all the prices
+- root_path: The root folder used for prices and the saved json file
+- best_input: The file that all the best inputs will be saved under
+- prices: the folder with all the prices
 
-- `trade_price`: How much you want to spend per trade
-- `profit_margin`: Whats the broker's profit margin
+- trade_price: How much you want to spend per trade
+- profit_margin: Whats the broker's profit margin
 
-- `min_trades`: mininum trades for inputs
-- `min_whole_per`: minimum percentage for the inputs for third time
-- `min_second_per`: minimum percentage for the inputs for second time
-- `min_first_per`: minimum percentage for the inputs for first time
+- min_trades: mininum trades for inputs
+- min_whole_per: minimum percentage for the inputs for third time
+- min_second_per: minimum percentage for the inputs for second time
+- min_first_per: minimum percentage for the inputs for first time
 
-- `first_time_length`: first time length (eg 2 weeks)
-- `second_time_length`: second time length (eg 1 month)
-- `whole_time_length`: third time length (eg 2 months)
+- first_time_length: first time length (eg 2 weeks)
+- second_time_length: second time length (eg 1 month)
+- whole_time_length: third time length (eg 2 months)
 
-- `no_threads`: number of threads per price
+- no_threads: number of threads per price
 
 # Features
 
@@ -39,6 +39,9 @@ There were millions of possible inputs, therefore speed was key. From the screen
 ### Best Inputs
 ![ScreenShot2](https://github.com/ContionMig/Options-Auto-Indicator/blob/main/docs/output.jpg)
 The bot will save all the best inputs into ```./data/best.json``` json file and will use these inputs when the bot runs for the first time. So if you like to stop the bot mid-way and continue, you can do so without losing all your progress. With this json file, you can actually setup a seperate bot which just trades using the data in the json file, so you don't have to touch anything related to APIs in this project rather, you can do it in python using libraries for websites like IQOptions or other brokers.
+
+# Dependency
+- https://rapidjson.org/
 
 # Disclaimer
 ##### FOR EDUCATIONAL AND INFORMATIONAL PURPOSES ONLY.
