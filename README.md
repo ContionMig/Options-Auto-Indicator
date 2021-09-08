@@ -42,6 +42,7 @@ The bot will save all the best inputs into ```./data/best.json``` json file and 
 
 # Dependency
 - https://rapidjson.org/
+- https://github.com/haarcuba/cpp-text-table
 
 # Disclaimer
 ##### FOR EDUCATIONAL AND INFORMATIONAL PURPOSES ONLY.
