@@ -8,23 +8,23 @@
 I coded this quite long ago just to get started on an auto trader. So it's pretty under developed and only uses one stragety which is the 3 SMA. Basically making trades when the Short and Long SMA crossover each other while using the Base SMA to see the trend. It's a pretty basic strategy and is used quite a bit for binary options. Since i have developed another auto trader which works more efficency and has more stragies wtih a proper GUI, i decided to release this first "prototype" i made for fun. 
 
 # Settings.cpp
-- root_path: The root folder used for prices and the saved json file
-- best_input: The file that all the best inputs will be saved under
-- prices: the folder with all the prices
+- `root_path`: The root folder used for prices and the saved json file
+- `best_input`: The file that all the best inputs will be saved under
+- `prices`: the folder with all the prices
 
-- trade_price: How much you want to spend per trade
-- profit_margin: Whats the broker's profit margin
+- `trade_price`: How much you want to spend per trade
+- `profit_margin`: Whats the broker's profit margin
 
-- min_trades: mininum trades for inputs
-- min_whole_per: minimum percentage for the inputs for third time
-- min_second_per: minimum percentage for the inputs for second time
-- min_first_per: minimum percentage for the inputs for first time
+- `min_trades`: mininum trades for inputs
+- `min_whole_per`: minimum percentage for the inputs for third time
+- `min_second_per`: minimum percentage for the inputs for second time
+- `min_first_per`: minimum percentage for the inputs for first time
 
-- first_time_length: first time length (eg 2 weeks)
-- second_time_length: second time length (eg 1 month)
-- whole_time_length: third time length (eg 2 months)
+- `first_time_length`: first time length (eg 2 weeks)
+- `second_time_length`: second time length (eg 1 month)
+- `whole_time_length`: third time length (eg 2 months)
 
-- no_threads: number of threads per price
+- `no_threads`: number of threads per price
 
 # Features
 
